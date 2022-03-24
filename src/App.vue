@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderMolisana />
+    <MainGrid />
+    <FooterMolisana />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderMolisana from '@/components/HeaderMolisana.vue'
+import MainGrid from '@/components/MainGrid.vue'
+import FooterMolisana from '@/components/FooterMolisana.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderMolisana,
+    MainGrid,
+    FooterMolisana
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "@/assets/styles/style.scss";
 </style>
